@@ -1,0 +1,43 @@
+{
+  "name": "asset-inliner",
+  "description": "Parses your markup and replaces references to external assets with inline code",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jasonbellamy/asset-inliner",
+  "author": {
+    "name": "Jason Bellamy",
+    "email": "j@sonbellamy.com",
+    "url": "http://jasonbellamy.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonbellamy/asset-inliner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jasonbellamy/asset-inliner/issues"
+  },
+  "license": "MIT",
+  "main": "lib/asset_inliner",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "3.1.2"
+  },
+  "dependencies": {
+    "jsdom": "0.10.1",
+    "assetment": "0.3.0"
+  },
+  "keywords": [
+    "inline",
+    "markup",
+    "extract",
+    "assets",
+    "css",
+    "html",
+    "javascript"
+  ]
+}
