@@ -5,8 +5,9 @@
 ## Features
 [asset-inliner](https://github.com/jasonbellamy/asset-inliner/) helps you optimize your pages by giving you the option to:
 
-- inline any JavaScript files it finds in your markup.
-- inline any stylesheet files it finds in your markup.
+- automatically inline all stylesheet & JavaScript files it finds in your markup.
+- [manually](#new-assetinliner-options-) inline **only** the files you choose by appending `data-inline="true"` to the element(s) markup.
+
 
 ## Getting Started
 
@@ -19,7 +20,7 @@ npm install --save asset-inliner
 
 ```javascript
 var AssetInliner = require( "asset-inliner" );
-var assetInliner = new AssetInliner( { javascripts: true, stylesheets: true } );
+var assetInliner = new AssetInliner();
 
 assetInliner.process( "markup.html", function( error, markup ) {
   if ( error ) {
@@ -31,15 +32,15 @@ assetInliner.process( "markup.html", function( error, markup ) {
 });
 ```
 
+
 ## API
 
-### new AssetInliner( filters )
+### new AssetInliner( options )
 
 Name                | Type      | Argument     | Default | Description
 --------------------|-----------|--------------|---------|------------
-filters             | `Object`  | `<required>` |         | Types of assets you want to extract.
-filters.javascripts | `boolean` | `<optional>` | `false` | Inline JavaScript files.
-filters.stylesheets | `boolean` | `<optional>` | `false` | Inline stylesheet files.
+options             | `Object`  | `<optional>` |         | Configuration options.
+options.manual      | `boolean` | `<optional>` | `false` | Manually define the assets that should be inlined.
 
 ### AssetInliner.process( filePath, callback )
 

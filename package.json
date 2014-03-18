@@ -1,7 +1,7 @@
 {
   "name": "asset-inliner",
   "description": "Parses your markup and replaces references to external assets with inline code",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/jasonbellamy/asset-inliner",
   "author": {
     "name": "Jason Bellamy",
@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "jsdom": "0.10.1",
-    "assetment": "0.3.0"
+    "assetment": "0.3.0",
+    "lodash-node": "2.4.1"
   },
   "keywords": [
     "inline",
