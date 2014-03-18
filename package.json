@@ -1,7 +1,7 @@
 {
   "name": "asset-inliner",
   "description": "Parses your markup and replaces references to external assets with inline code",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/jasonbellamy/asset-inliner",
   "author": {
     "name": "Jason Bellamy",
